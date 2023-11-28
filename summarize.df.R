@@ -1,4 +1,4 @@
-attach(full.df)
+attach(obesity.income.prices.11.27)
 
 library(dplyr)
 library(stringr)
@@ -21,6 +21,8 @@ for(i in 1:nrow(df)) {
   }
 }
 
+df.regions <- summarize(group_by(obesity.income.prices.11.27, Division), 'avg.obesity.region' = mean(obesity.perc, na.rm = TRUE))
+df <- select(df.regions, avg.obesity.region)
 
 write.csv(df, file = "obesity.income.prices.11.27.csv", row.names = FALSE)
 
