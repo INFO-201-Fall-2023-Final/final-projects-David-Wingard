@@ -1,0 +1,12 @@
+name: obesityfinalproject
+title: obesityfinalproject
+username: davidwingard
+account: davidwingard
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10769749
+bundleId: 8033653
+url: https://davidwingard.shinyapps.io/obesityfinalproject/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
